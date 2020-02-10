@@ -1,0 +1,47 @@
+{
+    "name": "Turnstile",
+    "fields": [
+        {
+            "fieldName": "identifier",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tbControllerId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tbDisplayId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cameraId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "x1",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "y1",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "x2",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "y2",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200210132204",
+    "entityTableName": "turnstile",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

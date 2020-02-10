@@ -1,0 +1,55 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="turnstile">
+            <h2><span>Turnstile</span> {{turnstile.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span>Identifier</span></dt>
+                <dd>
+                    <span>{{turnstile.identifier}}</span>
+                </dd>
+                <dt><span>Tb Controller Id</span></dt>
+                <dd>
+                    <span>{{turnstile.tbControllerId}}</span>
+                </dd>
+                <dt><span>Tb Display Id</span></dt>
+                <dd>
+                    <span>{{turnstile.tbDisplayId}}</span>
+                </dd>
+                <dt><span>Camera Id</span></dt>
+                <dd>
+                    <span>{{turnstile.cameraId}}</span>
+                </dd>
+                <dt><span>X 1</span></dt>
+                <dd>
+                    <span>{{turnstile.x1}}</span>
+                </dd>
+                <dt><span>Y 1</span></dt>
+                <dd>
+                    <span>{{turnstile.y1}}</span>
+                </dd>
+                <dt><span>X 2</span></dt>
+                <dd>
+                    <span>{{turnstile.x2}}</span>
+                </dd>
+                <dt><span>Y 2</span></dt>
+                <dd>
+                    <span>{{turnstile.y2}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/turnstile', turnstile.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

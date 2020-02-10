@@ -1,0 +1,20 @@
+
+entity Turnstile {
+	identifier String,
+	tbControllerId String,
+	tbDisplayId String,
+    cameraId String,
+    x1 Double,
+    y1 Double,
+    x2 Double,
+    y2 Double
+}
+
+
+
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
